@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <main data-theme="dark">
+      <header class="flex align-center justify-between">
+        <h1>Calculadora</h1>
+        <div>
+          <input type="checkbox" class="switchTheme" id="switchTheme" />
+          <label for="switchTheme">
+            <img src="./img/sun.png" width="25px" style="margin-left: -3px" />
+            <img src="./img/moon.png" width="20px" />
+            <div class="ball"></div>
+          </label>
+        </div>
+      </header>
+      <input type="text" id="input" placeholder="0" disabled />
+      <div id="keys">
+        <button id="clear">C</button>
+        <button class="charkey" data-value=" ( ">(</button>
+        <button class="charkey" data-value=" ) ">)</button>
+        <button class="charkey" data-value=" / ">/</button>
+        <button class="charkey" data-value="7">7</button>
+        <button class="charkey" data-value="8">8</button>
+        <button class="charkey" data-value="9">9</button>
+        <button class="charkey" data-value=" * ">*</button>
+        <button class="charkey" data-value="4">4</button>
+        <button class="charkey" data-value="5">5</button>
+        <button class="charkey" data-value="6">6</button>
+        <button class="charkey" data-value=" - ">-</button>
+        <button class="charkey" data-value="1">1</button>
+        <button class="charkey" data-value="2">2</button>
+        <button class="charkey" data-value="3">3</button>
+        <button class="charkey" data-value=" + ">+</button>
+        <button class="charkey" data-value="0">0</button>
+        <button class="charkey" data-value=".">.</button>
+        <button class="charkey" data-value="%">%</button>
+        <button id="equal">=</button>
+      </div>
+      <section class="flex align-center justify-between">
+        <button id="copyToClipboard">Copy</button>
+        <input type="text" id="result" disabled />
+      </section>
+      <footer>
+        <a href="http://instagram.com/dudu_fk" target="_blank">@Dudu_Fk</a>
+      </footer>
+    </main>
+  </body>
+</html>
